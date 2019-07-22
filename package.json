@@ -1,0 +1,32 @@
+{
+  "name": "pern-app",
+  "version": "1.0.0",
+  "description": "A practice CRUD app usin PERN stack (Postgres, Express, React and Node).",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrCesar107/crud-pern-practice-app.git"
+  },
+  "author": "Cesar Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrCesar107/crud-pern-practice-app/issues"
+  },
+  "homepage": "https://github.com/MrCesar107/crud-pern-practice-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.19.0",
+    "knex": "^0.19.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
