@@ -28,13 +28,13 @@ var db = require('knex')({
 })
 
 // Controllers (the queries)
-const main = require('./controllers/main')
+const main = require('./controllers/')
 
 // App
 const app = express()
 
 // App middleware
-const whitelist = ['http://localhost:4001']
+const whiteList = ['http://localhost:4001']
 const corsOptions = {
   origin: function (origin, callback) {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
@@ -58,6 +58,6 @@ app.put('/crud', (req, res) => main.putTableData(req, res, db))
 app.delete('/crud', (req, res) => main.deleteTableData(req, res, db))
 
 // App Server Connection
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`app is running on port ${process.env.PORT || 3000}`)
+app.listen(process.env.PORT || 4001, () => {
+  console.log(`app is running on port ${process.env.PORT || 4000}`)
 })
